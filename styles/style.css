@@ -1,0 +1,636 @@
+/**
+font-family: 'Modak', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'MuseoModerno', cursive;
+font-family: 'Permanent Marker', cursive;
+**/
+
+.bg-primary {
+    background-color: #242423 !important;
+}
+
+.bg-secondary {
+    background-color: #F5CB5C !important;
+}
+
+.bg-tertiary {
+    background-color: #F0F0F0;
+}
+
+.text-primary {
+    background-color: #242423 !important;
+}
+
+.text-secondary {
+    background-color: #F5CB5C !important;
+}
+
+.text-tertiary {
+    background-color: #F0F0F0;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    background-color: #F0F0F0;
+    position: relative;
+    height: 100vh;
+}
+
+.header::after {
+    content: "";
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #242423;
+    position: absolute;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.header__avatar {
+    background-color: #F5CB5C;
+    border-radius: 100%;
+    border: 10px solid #242423;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.header__avatar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 189px;
+    height: 189px;
+    background-image: url(../images/avatar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.header__title {
+    font-family: 'Modak', cursive;
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    color: #F5CB5C;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 8px 0 8px 0;
+}
+
+.header__text1 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    color: #F5CB5C;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0 0 5px;
+    padding: 5px 0 5px 0;
+}
+
+.header__text2 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    color: #F5CB5C;
+    background-color: #242423;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 5px 0px 5px 0px;
+}
+
+.header__arrow-mark {
+    width: 60px;
+    margin-bottom: 20px !important;
+    margin: auto;
+    position: relative;
+}
+
+.header__arrow-mark svg {
+    fill: #242423;
+}
+
+.header__arrow-mark svg:hover {
+    fill: #242423cc;
+}
+
+.bi-chevron-double-down {
+/*     filter: drop-shadow(0px 5px 3px 0 rgba(0, 0, 0, 0.25)) !important; */
+}
+
+.header__arrow-mark::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_noir.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -50px;
+    left: 45px;
+    width: 84px;
+    height: 50px;
+    transform: rotate(65deg);
+}
+
+.header__arrow-mark::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_jaune.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -80px;
+    left: 50px;
+    width: 104px;
+    height: 70px;
+}
+
+
+/* ---- SECTION 1 ---- */
+
+
+.section1 {
+    background-color: #242423;
+    height: 100vh;
+}
+
+.section1__title {
+    font-family: 'Modak', cursive;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    color: #F5CB5C;
+    position: relative;
+}
+
+.section1__title::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_blanc.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 10px;
+    right: 25px;
+    width: 84px;
+    height: 50px;
+    z-index: 1;
+    transform: rotate(65deg);
+}
+
+.section1__text {
+    color: #F0F0F0;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    margin: 10px 25px 10px 15px;
+    position: relative;
+}
+
+.section1__text::before {
+    content: "“";
+    font-family: 'Modak', cursive;
+    color: #F5CB5C;
+    position: absolute;
+    font-size: 46px;
+    top: -30px;
+    left: 0px;
+}
+
+.section1__text::after {
+    content: "”";
+    font-family: 'Modak', cursive;
+    color: #F5CB5C;
+    position: absolute;
+    font-size: 46px;
+    bottom: -20px;
+    right: -21px;
+}
+
+.section1__arrow-mark {
+    width: 60px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 20px !important;
+}
+
+.section1__arrow-mark::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_blanc.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 20px;
+    left: -124px;
+    width: 84px;
+    height: 50px;
+    z-index: 1;
+    transform: rotate(355deg);
+}
+
+.section1__arrow-mark svg {
+    fill: #F5CB5C;
+}
+
+.section1__arrow-mark svg:hover {
+    fill: #f5cc5ccc;
+}
+
+/* ---- SECTION 2 ---- */
+
+.section2 {
+    background-color: #F5CB5C;
+    height: 100vh;
+}
+
+.section2__title {
+    font-family: 'Modak', cursive;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #F0F0F0;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+}
+
+.section2__text {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 18px;
+    text-align: center;
+    color: #F0F0F0;
+    background-color: #242423;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 10px 20px 10px 20px;
+}
+
+.section2__cards1 {
+    height: 230px;
+    width: 230px;
+    margin: auto;
+    background-image: url(../images/projet_formulaire.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid #F0F0F0;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-bottom: 60px solid #F0F0F0;
+    transform-origin: 50% 0;
+    transform: rotate(-6deg);
+    position: relative;
+}
+
+.section2__cards1 figcaption {
+    position: absolute;
+    bottom: -50px;
+    left: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cards1 {
+    position: relative;
+}
+
+.cards1-mark::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_noir.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -15px;
+    left: 23px;
+    width: 84px;
+    height: 50px;
+    transform: rotate(275deg);
+}
+
+.section2__cards1::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/punaise.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -46px;
+    left: 45%;
+    transform-origin: 18% 90%;
+    transform: rotate(8deg);
+}
+
+
+/* ---- SECTION 3 ---- */
+.section3 {
+    background-color: #F5CB5C;
+    height: 100vh;
+}
+
+.section3__cards2 {
+    height: 230px;
+    width: 230px;
+    margin: auto;
+    background-image: url(../images/projet_biographie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid #F0F0F0;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-bottom: 60px solid #F0F0F0;
+    transform-origin: 50% 0;
+    transform: rotate(6deg);
+    position: relative;
+}
+
+.section3__cards2 figcaption {
+    position: absolute;
+    bottom: -50px;
+    left: 43px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cards2 {
+    position: relative;
+}
+
+.cards2-mark::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_noir.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -15px;
+    right: 23px;
+    width: 84px;
+    height: 50px;
+}
+
+.section3__cards2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/punaise.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -46px;
+    left: 45%;
+    transform-origin: 18% 90%;
+    transform: rotate(280deg);
+}
+
+.section3__cards3 {
+    height: 230px;
+    width: 230px;
+    margin: auto;
+    background-image: url(../images/projet_native_instrument.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid #F0F0F0;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-bottom: 60px solid #F0F0F0;
+    transform-origin: 50% 0;
+    transform: rotate(-6deg);
+    position: relative;
+}
+
+.section3__cards3 figcaption {
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cards3 {
+    position: relative;
+}
+
+.cards3-mark::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_noir.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -15px;
+    left: 23px;
+    width: 84px;
+    height: 50px;
+    transform: rotate(275deg);
+}
+
+.section3__cards3::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/punaise.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -46px;
+    left: 45%;
+    transform-origin: 18% 90%;
+    transform: rotate(8deg);
+}
+
+
+/* ---- SECTION 4 ---- */
+
+
+.section4 {
+    background-color: #F0F0F0;
+    height: 100vh;
+}
+
+.section4__title {
+    font-family: 'Modak', cursive;
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    color: #F5CB5C;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 8px 0 8px 0;
+}
+
+.section4__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.section4__text1 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 18px;
+    text-align: left;
+    color: #242423;
+    padding: 5px 0 5px 0;
+}
+
+.section4__text2 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 18px;
+    text-align: right;
+    color: #242423;
+    padding: 5px 0 5px 0;
+}
+
+.section4__frontend {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #F5CB5C;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius:0 5px 5px 0;
+    padding: 5px 0 5px 0;
+    margin-top: -50px;
+}
+
+.section4__frontend p {
+    margin-left: 20px !important;
+    margin-bottom: 10px !important;
+    margin: 0;
+}
+
+.section4__frontend ul {
+    color: #F0F0F0;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section4__backend {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #F5CB5C;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px 0 0 5px;
+    padding: 5px 0 5px 0;
+}
+
+.section4__backend p {
+    margin-left: 20px !important;
+    margin-bottom: 10px !important;
+    margin: 0;
+}
+
+.section4__backend ul {
+    color: #F0F0F0;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section4__system {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #F5CB5C;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 0 5px 0;
+    position: relative;
+}
+
+.section4__system p {
+    margin-bottom: 10px !important;
+    margin: 0;
+}
+
+.section4__system ul {
+    color: #F0F0F0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section4__system::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_jaune.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -90px;
+    left: -30px;
+    width: 100px;
+    height: 70px;
+    transform: rotate(275deg);
+}
+
+.section4__system::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_noir.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -60px;
+    left: 0;
+    width: 66px;
+    height: 40px;
+    transform: rotate(20deg);
+}
+
+
+/* ---- SECTION 5 ---- */
+
+
+.section5 {
+    background-color: #F5CB5C;
+    height: 100vh;
+}
+
+.section5__title {
+    font-family: 'Modak', cursive;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #F0F0F0;
+    background-color: #242423;
+    box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+}
+
+form {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.btn-primary {
+    background-color: #242423 !important;
+    border: #242423;
+}
+

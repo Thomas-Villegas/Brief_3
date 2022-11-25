@@ -1,96 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Portfolio Thomas Villegas</title>
     </head>
+
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-light">Light</button>
-                    <button type="button" class="btn btn-dark">Dark</button>
-                    <button type="button" class="btn btn-link">Link</button>
+
+<!---- HEADER ---->
+        <header class="header">
+            <div class="container d-flex flex-column justify-content-between vh-100">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="header__avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="header__title">
+                            Thomas Villegas
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-8 p-0">
+                        <div class="header__text1">
+                            Développeur Web
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-start">
+                    <div class="col-5 p-0">
+                        <div class="header__text2">
+                            Junior
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="header__arrow-mark">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item active" aria-current="page">Home</li>
-                        </ol>
-                      </nav>
-                      
-                      <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Library</li>
-                        </ol>
-                      </nav>
-                      
-                      <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a href="#">Library</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Data</li>
-                        </ol>
-                      </nav>
+        </header>
+
+<!---- SECTION 1 ---->
+        <section class="section1">
+            <div class="container-md d-flex flex-column justify-content-between vh-100 p-0">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="section1__title">À Propos</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section1__text">Salut ! Je m’appelle Thomas,<br>
+                            j’ai 27 ans et je me suis découvert une passion pour le monde du développement<br>
+                            <br>
+                            Au début, j’ai commencé en autodidacte sur des plateformes en ligne gratuite pour apprendre le code et ses différents langages.
+                            Puis j’ai décidé d’en faire mon métier. <br>
+                            Je me retrouve donc aujourd’hui a passer un titre professionnel au GRETA de Mende.<br>
+                            <br>
+                            J’ai comme ambition de continuer mon apprentissage en validant une licence en alternance pour devenir développeur full stack
+                            en freelancing
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="section1__arrow-mark">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-              <div class="col-md-12 col-lg-6 text-left">
-                Column
-              </div>
-              <div class="col-md-12 col-lg-6">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Accordion Item #1
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
+        </section>
+
+<!---- SECTION 2 ---->
+        <section class="section2">
+            <div class="container-md d-flex flex-column justify-content-around vh-100">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="section2__title">Mes Projets</div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Accordion Item #2
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-8 p-0">
+                        <div class="section2__text">Actuellement en formation,<br>
+                            j’ai réalisé quelques<br>
+                            travaux pratique que<br>
+                            je vous présente ici.
                         </div>
-                      </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Accordion Item #3
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+                <div class="row cards1">
+                    <div class="col-12 cards1-mark">
+                        <div class="section2__cards1">
+                            <figcaption>
+                                Formulaire de satisfaction<br>HTML & CSS
+                            </figcaption>
                         </div>
-                      </div>
                     </div>
-                  </div>
-              </div>
+                </div>
             </div>
-          </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        </section>
+
+<!---- SECTION 3 ---->
+        <section class="section3">
+            <div class="container-md d-flex flex-column justify-content-around vh-100">
+                <div class="row cards2">
+                    <div class="col-12 cards2-mark">
+                        <div class="section3__cards2">
+                            <figcaption>
+                                Page Biographique<br>HTML & CSS
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cards3">
+                    <div class="col-12 cards3-mark">
+                        <div class="section3__cards3">
+                            <figcaption>
+                                Reproduction d'un site<br>en responsive
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---- SECTION 4 ---->
+        <section class="section4">
+            <div class="container d-flex flex-column justify-content-around vh-100">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="section4__title">Mes Compétences</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 section4__text">
+                        <span class="section4__text1">La liste est petite...</span>
+                        <span class="section4__text2">...Mais les motivations sont<br>grandes!</span>
+                    </div>
+                </div>
+                <div class="row justify-content-start">
+                    <div class="col-6 section4__frontend">
+                        <p>Front End :</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-6 section4__backend">
+                        <p>Back End :</p>
+                        <ul>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8 section4__system">
+                        <p>Système :</p>
+                        <ul>
+                            <li>MacOS</li>
+                            <li>Windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---- SECTION 5 ---->
+        <section class="section5">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="section5__title">Me Contacter</div>
+                    </div>
+                </div>
+                <form class="p-4 d-flex flex-column align-items-center">
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="mb-4">
+                                <label for="lastNameForm">Nom</label>
+                                <input type="text" name="lastNameForm" id="lastNameForm" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-4">
+                                <label for="firstNameForm">Prénom</label>
+                                <input type="text" name="firstNameForm" id="firstNameForm" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4 col-12">
+                        <label for="motifForm">Objet *</label>
+                        <input type="text" name="motifForm" id="motifForm" class="form-control" required>
+                    </div>
+                    <div class="mb-4 col-12">
+                        <label for="emailForm" class="form-label">E-Mail *</label>
+                        <input type="email" class="form-control" id="email" placeholder="marco@polo.com" required>
+                    </div>
+                    <div class="mb-5 col-12">
+                        <label for="textAreaForm" class="form-label">Message *</label>
+                        <textarea class="form-control" id="textArea" rows="5" placeholder="Écrivez votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary col-4">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
     </body>
+
 </html>
