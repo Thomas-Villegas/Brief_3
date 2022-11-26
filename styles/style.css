@@ -586,12 +586,12 @@ font-family: 'Permanent Marker', cursive;
     border-radius: 5px 0 0 5px;
     padding: 5px 0 5px 0;
     animation: 1s ease-in-out;
-    transform: translateX(100%);
+    transform: scaleX(0);
 }
 
 .section4__backend.scroll {
     animation-name: blockAdventRight;
-    transform: translateX(0%);
+    transform: scaleX(100%);
 }
 
 .section4__backend p {
@@ -650,11 +650,13 @@ font-family: 'Permanent Marker', cursive;
 .section5__title {
     font-family: 'Modak', cursive;
     font-size: 36px;
+    width: 100%;
     text-align: center;
     letter-spacing: 3px;
     color: #F0F0F0;
     background-color: #242423;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 8px 0 8px 0;
     margin-top: 40px;
 }
 
@@ -667,3 +669,53 @@ form {
     border: #242423;
 }
 
+
+/* ---- FOOTER ---- */
+
+
+.footer {
+    background-color: #242423;
+    height: 100vh;
+}
+
+.footer__title {
+    font-family: 'Modak', cursive;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    color: #F5CB5C;
+}
+
+.bi-linkedin {
+    margin: 133% 0 133% 0;
+}
+
+.footer svg {
+    fill: #F0F0F0;
+
+}
+
+.footer svg:hover {
+    fill: #f0f0f0cc;
+}
+
+.footer__numero {
+    color: #F0F0F0;
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.footer__numero:hover {
+    color: #F0F0F0cc;
+}
+
+.footer__info {
+    color: #F5CB5C;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
