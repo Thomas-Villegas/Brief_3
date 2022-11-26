@@ -85,7 +85,7 @@ font-family: 'Permanent Marker', cursive;
     color: #F5CB5C;
     background-color: #242423;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
-    padding: 8px 0 8px 0;
+    padding: 15px 0 15px 0;
 }
 
 .header__text1 {
@@ -97,19 +97,21 @@ font-family: 'Permanent Marker', cursive;
     background-color: #242423;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px 0 0 5px;
-    padding: 5px 0 5px 0;
+    padding: 10px 0 10px 0;
+    animation: blockAdventRight 1s ease-in-out;
 }
 
 .header__text2 {
     font-family: 'MuseoModerno', cursive;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     margin-top: 30px;
     color: #F5CB5C;
     background-color: #242423;
     border-radius: 0 5px 5px 0;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
-    padding: 5px 0px 5px 0px;
+    padding: 10px 0px 10px 0px;
+    animation: blockAdventLeft 1s ease-in-out;
 }
 
 .header__arrow-mark {
@@ -127,9 +129,9 @@ font-family: 'Permanent Marker', cursive;
     fill: #242423cc;
 }
 
-.bi-chevron-double-down {
-/*     filter: drop-shadow(0px 5px 3px 0 rgba(0, 0, 0, 0.25)) !important; */
-}
+/* .bi-chevron-double-down {
+    filter: drop-shadow(0px 5px 3px 0 rgba(0, 0, 0, 0.25)) !important; 
+} */
 
 .header__arrow-mark::before {
     content: "";
@@ -278,6 +280,11 @@ font-family: 'Permanent Marker', cursive;
     border-radius: 5px 0 0 5px;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     padding: 10px 20px 10px 20px;
+    animation: 1s ease-in-out;
+}
+
+.section2__text.scroll {
+    animation-name: blockAdventRight;
 }
 
 .section2__cards1 {
@@ -294,6 +301,11 @@ font-family: 'Permanent Marker', cursive;
     transform-origin: 50% 0;
     transform: rotate(-6deg);
     position: relative;
+    animation: 2s ease-in-out;
+}
+
+.section2__cards1.scroll {
+    animation: moveCardsRight;
 }
 
 .section2__cards1 figcaption {
@@ -500,6 +512,35 @@ font-family: 'Permanent Marker', cursive;
     text-align: right;
     color: #242423;
     padding: 5px 0 5px 0;
+    position: relative;
+}
+
+.section4__text2::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_jaune.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -90px;
+    right: 30px;
+    width: 100px;
+    height: 70px;
+    transform: rotate(275deg);
+}
+
+.section4__text2::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/encre_noir.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: -95px;
+    right: 30px;
+    width: 66px;
+    height: 40px;
+    transform: rotate(20deg);
 }
 
 .section4__frontend {
@@ -512,6 +553,13 @@ font-family: 'Permanent Marker', cursive;
     border-radius:0 5px 5px 0;
     padding: 5px 0 5px 0;
     margin-top: -50px;
+    animation: 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.section4__frontend.scroll {
+    animation-name: blockAdventLeft;
+    transform: translateX(0%);
 }
 
 .section4__frontend p {
@@ -537,6 +585,13 @@ font-family: 'Permanent Marker', cursive;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px 0 0 5px;
     padding: 5px 0 5px 0;
+    animation: 1s ease-in-out;
+    transform: translateX(100%);
+}
+
+.section4__backend.scroll {
+    animation-name: blockAdventRight;
+    transform: translateX(0%);
 }
 
 .section4__backend p {
@@ -562,7 +617,13 @@ font-family: 'Permanent Marker', cursive;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px 5px 5px 5px;
     padding: 5px 0 5px 0;
-    position: relative;
+    animation: 1s ease-in-out;
+    transform: translateY(100%);
+}
+
+.section4__system.scroll {
+    animation-name: blockAdventBottom;
+    transform: translate(0%);
 }
 
 .section4__system p {
@@ -575,34 +636,6 @@ font-family: 'Permanent Marker', cursive;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.section4__system::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/encre_jaune.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: -90px;
-    left: -30px;
-    width: 100px;
-    height: 70px;
-    transform: rotate(275deg);
-}
-
-.section4__system::after {
-    content: "";
-    position: absolute;
-    background-image: url(../images/encre_noir.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: -60px;
-    left: 0;
-    width: 66px;
-    height: 40px;
-    transform: rotate(20deg);
 }
 
 
