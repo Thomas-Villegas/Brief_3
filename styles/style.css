@@ -2,7 +2,7 @@
  /* ------ MOBILE VERSION ------ */
 /* -----------------------------*/
 
-/* Désolé pour cette pratique qui ne m'enchante guère */
+
 #content__mobile {
     display: block;
 }
@@ -16,7 +16,7 @@
 #header__mobile {
     background-color: #F0F0F0;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #header__mobile::after {
@@ -148,7 +148,7 @@
 
 #section1__mobile {
     background-color: #242423;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section1__title {
@@ -239,7 +239,7 @@
 
 #section2__mobile {
     background-color: #F5CB5C;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section2__title {
@@ -251,6 +251,7 @@
     background-color: #242423;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     margin-top: 40px;
+    padding: 10px;
 }
 
 .section2__text {
@@ -262,17 +263,21 @@
     border-radius: 5px 0 0 5px;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     padding: 10px 20px 10px 20px;
-/*     animation: 1s ease-in-out;
- */}
+    animation: 1s ease-in-out;
+    margin-top: 20px;
+    opacity: 0;
+}
 
-/* .section2__text.scroll {
+.section2__text.active {
+    opacity: 1;
     animation-name: blockAdventRight;
-} */
+}
 
 .section2__cards1 {
     height: 230px;
     width: 230px;
     margin: auto;
+    margin-top: 35px;
     background-image: url(../images/projet_formulaire.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -281,16 +286,14 @@
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-bottom: 60px solid #F0F0F0;
     transform-origin: 50% 0;
-    transform: rotate(-6deg);
+    transform: rotate(0deg);
     position: relative;
-}
-/*     transition-duration: 2s;
-    animation: 2s ease-in-out;
+    animation: 1.5s ease-in-out;
 }
 
-.section2__cards1.scroll {
-    animation: moveCardsRight;
-} */
+.cardsall.active {
+    animation-name: moveCards;
+}
 
 .section2__cards1 figcaption {
     position: absolute;
@@ -319,32 +322,18 @@
     transform: rotate(275deg);
 }
 
-.section2__cards1::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/punaise.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: -46px;
-    left: 45%;
-    transform-origin: 18% 90%;
-    transform: rotate(8deg);
-}
-
 
 /* ---- SECTION 3 ---- */
 #section3__mobile {
     background-color: #F5CB5C;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section3__cards2 {
     height: 230px;
     width: 230px;
     margin: auto;
+    margin-top: 45px;
     background-image: url(../images/projet_biographie.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -353,8 +342,11 @@
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-bottom: 60px solid #F0F0F0;
     transform-origin: 50% 0;
-    transform: rotate(6deg);
+    transform: rotate(0deg);
     position: relative;
+    animation: 1.5s ease-in-out;
+    animation-delay: .2s;
+
 }
 
 .section3__cards2 figcaption {
@@ -383,25 +375,14 @@
     height: 50px;
 }
 
-.section3__cards2::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/punaise.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: -46px;
-    left: 45%;
-    transform-origin: 18% 90%;
-    transform: rotate(280deg);
-}
+
 
 .section3__cards3 {
     height: 230px;
     width: 230px;
     margin: auto;
+    margin-top: 45px;
+    margin-bottom: 50px;
     background-image: url(../images/projet_native_instrument.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -412,6 +393,8 @@
     transform-origin: 50% 0;
     transform: rotate(-6deg);
     position: relative;
+    animation: 1.5s ease-in-out;
+    animation-delay: .3s;
 }
 
 .section3__cards3 figcaption {
@@ -441,7 +424,11 @@
     transform: rotate(275deg);
 }
 
-.section3__cards3::after {
+.pins__cards {
+    position: relative;
+}
+
+.pins__cards::after {
     content: "";
     position: absolute;
     width: 50px;
@@ -450,10 +437,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    top: -46px;
-    left: 45%;
+    top: 5px;
+    left: 48%;
     transform-origin: 18% 90%;
-    transform: rotate(8deg);
+    transform: rotate(290deg);
+    z-index: 1;
 }
 
 
@@ -462,7 +450,7 @@
 
 #section4__mobile {
     background-color: #F0F0F0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section4__title {
@@ -494,6 +482,7 @@
     font-family: 'MuseoModerno', cursive;
     font-size: 18px;
     text-align: right;
+    margin-bottom: 20px;
     color: #242423;
     padding: 5px 0 5px 0;
     position: relative;
@@ -531,20 +520,21 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 15px;
     text-align: left;
+    margin-bottom: 20px;
     color: #F5CB5C;
     background-color: #242423;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius:0 5px 5px 0;
     padding: 5px 0 5px 0;
     margin-top: -50px;
-/*     animation: 1s ease-in-out;
-    transform: translateX(-100%); */
+    animation: 1s ease-in-out;
+   opacity: 0;
 }
 
-/* .section4__frontend.scroll {
+.section4__frontend.active {
     animation-name: blockAdventLeft;
-    transform: translateX(0%);
-} */
+    opacity: 1;
+}
 
 .section4__frontend p {
     margin-left: 20px !important;
@@ -569,14 +559,14 @@
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px 0 0 5px;
     padding: 5px 0 5px 0;
-/*     animation: 1s ease-in-out;
-    transform: scaleX(0); */
+    animation: 1s ease-in-out;
+    opacity: 0;
 }
 
-/* .section4__backend.scroll {
+.section4__backend.active {
     animation-name: blockAdventRight;
-    transform: scaleX(100%);
-} */
+    opacity: 1;
+}
 
 .section4__backend p {
     margin-left: 20px !important;
@@ -596,19 +586,21 @@
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 15px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #F5CB5C;
     background-color: #242423;
     box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px 5px 5px 5px;
     padding: 5px 0 5px 0;
-/*     animation: 1s ease-in-out;
-    transform: translateY(100%); */
+    animation: 1s ease-in-out;
+    opacity: 0;
 }
 
-/* .section4__system.scroll {
+.section4__system.active {
     animation-name: blockAdventBottom;
-    transform: translate(0%);
-} */
+    opacity: 1;
+}
 
 .section4__system p {
     margin-bottom: 10px !important;
@@ -628,7 +620,7 @@
 
 #section5__mobile {
     background-color: #F5CB5C;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .section5__title {
@@ -659,7 +651,7 @@ form {
 
 #footer__mobile {
     background-color: #242423;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .footer__title {
@@ -672,11 +664,14 @@ form {
 }
 
 .bi-linkedin {
-    margin: 133% 0 133% 0;
+   
 }
 
 #footer__mobile svg {
     fill: #F0F0F0;
+    width: 40px;
+    height: 40px;
+    margin: 20px 0 20px 0;
 
 }
 
@@ -700,6 +695,7 @@ form {
     color: #F5CB5C;
     letter-spacing: 2px;
     font-size: 14px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -709,7 +705,7 @@ form {
  /* ------ VERSION DESKOP ------ */
 /* ---------------------------- */
 
-/* Désolé pour cette pratique qui ne m'enchante guère */
+
 @media (min-width: 768px) {
     #content__mobile {
         display: none;
@@ -717,13 +713,16 @@ form {
 
     #content__desktop {
         display: block;
-        background-color: #F0F0F0;
-        height: 100vh;
     }
-
-
+    
+    
     /* ---- HEADER DESKTOP ---- */
-
+    
+    
+    #header__desktop {        
+        background-color: #F0F0F0;
+        min-height: 100vh;
+    }
 
     #header__desktop::after {
         content: "";
@@ -752,7 +751,7 @@ form {
         padding: 0;
         margin-top: 56px;
         letter-spacing: 8px;
-        font-size: 60px;
+        font-size: 56px;
     }
 
     .header__title__desktop {
@@ -765,6 +764,7 @@ form {
         font-size: 32px;
         padding: 20px;
         margin-top: 15px;
+        border-radius: 5px;
     }
 
     .section1__text {
@@ -878,7 +878,7 @@ form {
 
 
     .section1__desktop {
-        height: 100vh;
+        min-height: 100vh;
         background-color: #F5CB5C;
 
     }
@@ -886,7 +886,7 @@ form {
     .section2__title {
         font-size: 42px;
         padding: 15px;
-        border-radius:0 5px 5px 0;
+        border-radius: 5px;
         box-shadow: 0px 5px 3px 0 rgba(0, 0, 0, 0.25);
     }
 
@@ -894,6 +894,8 @@ form {
         font-size: 20px;
         padding: 15px;
         margin-top: 125px;
+        opacity: 1;
+        border-radius: 5px;
     }
 
     .cards1{
@@ -980,12 +982,13 @@ form {
 
     #section2__desktop {
         background-color: #F0F0F0;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .section4__title {
         font-size: 42px;
         padding: 15px;
+        border-radius: 5px;
     }
 
     .section4__text1 {
@@ -1021,6 +1024,8 @@ form {
         transform: none;
         font-size: 20px;
         padding: 20px;
+        opacity: 1;
+        border-radius: 5px;
     }
 
     .section4__backend {
@@ -1029,6 +1034,8 @@ form {
         padding: 20px;
         margin-bottom: 70px;
         margin-top: -120px;
+        opacity: 1;
+        border-radius: 5px;
     }
 
     .section4__system {
@@ -1037,6 +1044,8 @@ form {
         padding: 20px;
         margin-top: -100px;
         margin-bottom: 50px;
+        opacity: 1;
+        border-radius: 5px;
     }
 
 
@@ -1045,7 +1054,7 @@ form {
 
     #section3__desktop {
         background-color: #242423;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .section5__title {
@@ -1073,14 +1082,14 @@ form {
 
     #footer__desktop {
         background-color: #242423;
-        height: 25%;
+        min-height: max-content;
     }
 
     #footer__desktop svg {
         fill: #F0F0F0;
         width: 70px;
         height: 70px;
-        margin: -20px 30px 0 30px;
+        margin: 0px 30px 0 30px;
     }
 
     #footer__desktop svg:hover {
