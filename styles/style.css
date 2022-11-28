@@ -444,6 +444,14 @@
     z-index: 1;
 }
 
+a {
+    color: #242423;
+  }
+ 
+ a:hover {
+     color: #242423cc;
+ }
+
 
 /* ---- SECTION 4 ---- */
 
