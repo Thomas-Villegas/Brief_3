@@ -218,34 +218,30 @@
                             <h1 class="section5__title">Me Contacter</h1>
                         </div>
                     </div>
-                    <form class="p-4 d-flex flex-column align-items-center">
-                        <div class="row mt-4">
-                            <div class="col-6">
-                                <div class="mb-4">
-                                    <label for="lastNameForm">Nom</label>
-                                    <input type="text" name="lastNameForm" id="lastNameForm" class="form-control">
-                                </div>
+                    <form class="container-lg p-4 d-flex flex-column align-items-center" action="contact.php" method="post">
+                        <div class="row justify-content-between mt-4">
+                            <div class="col-6 mb-4">
+                                <label for="lastNameForm">Nom</label>
+                                <input type="text" name="lastNameForm" id="lastNameForm" class="form-control">
                             </div>
-                            <div class="col-6">
-                                <div class="mb-4">
-                                    <label for="firstNameForm">Prénom</label>
-                                    <input type="text" name="firstNameForm" id="firstNameForm" class="form-control">
-                                </div>
+                            <div class="col-6 mb-4">
+                                <label for="firstNameForm">Prénom</label>
+                                <input type="text" name="firstNameForm" id="firstNameForm" class="form-control">
                             </div>
                         </div>
-                        <div class="mb-4 col-12">
+                        <div class="mb-4 col-6">
                             <label for="motifForm">Objet *</label>
                             <input type="text" name="motifForm" id="motifForm" class="form-control" required>
                         </div>
-                        <div class="mb-4 col-12">
+                        <div class="mb-4 col-6">
                             <label for="emailForm" class="form-label">E-Mail *</label>
-                            <input type="email" class="form-control" id="email" placeholder="marco@polo.com" required>
+                            <input type="email" name="emailForm" class="form-control" id="emailForm" placeholder="marco@polo.com" required>
                         </div>
-                        <div class="mb-5 col-12">
+                        <div class="mb-5 col-6">
                             <label for="textAreaForm" class="form-label">Message *</label>
-                            <textarea class="form-control" id="textArea" rows="5" placeholder="Écrivez votre message..." required></textarea>
+                            <textarea class="form-control" name="textAreaForm" id="textArea" rows="6" placeholder="Écrivez votre message..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary col-4">Envoyer</button>
+                        <button type="submit" name="submit" class="btn btn-primary col-2">Envoyer</button>
                     </form>
                 </div>
             </section>
@@ -463,30 +459,30 @@
                             <h1 class="section5__title">Me Contacter</h1>
                         </div>
                     </div>
-                    <form class="container-lg p-4 d-flex flex-column align-items-center">
+                    <form class="container-lg p-4 d-flex flex-column align-items-center" action="contact.php" method="post">
                         <div class="row justify-content-between mt-4">
                             <div class="col-6 mb-4">
-                                <label for="lastNameForm">Nom</label>
-                                <input type="text" name="lastNameForm" id="lastNameForm" class="form-control">
+                                <label for="lastNameFormDesktop">Nom</label>
+                                <input type="text" name="lastNameForm" id="lastNameFormDesktop" class="form-control">
                             </div>
                             <div class="col-6 mb-4">
-                                <label for="firstNameForm">Prénom</label>
-                                <input type="text" name="firstNameForm" id="firstNameForm" class="form-control">
+                                <label for="firstNameFormDesktop">Prénom</label>
+                                <input type="text" name="firstNameForm" id="firstNameFormDesktop" class="form-control">
                             </div>
                         </div>
                         <div class="mb-4 col-6">
-                            <label for="motifForm">Objet *</label>
-                            <input type="text" name="motifForm" id="motifForm" class="form-control" required>
+                            <label for="motifFormDesktop">Objet *</label>
+                            <input type="text" name="motifForm" id="motifFormDesktop" class="form-control" required>
                         </div>
                         <div class="mb-4 col-6">
-                            <label for="emailForm" class="form-label">E-Mail *</label>
-                            <input type="email" class="form-control" id="email" placeholder="marco@polo.com" required>
+                            <label for="emailFormDesktop" class="form-label">E-Mail *</label>
+                            <input type="email" name="emailForm" class="form-control" id="emailFormDesktop" placeholder="marco@polo.com" required>
                         </div>
                         <div class="mb-5 col-6">
-                            <label for="textAreaForm" class="form-label">Message *</label>
-                            <textarea class="form-control" id="textArea" rows="6" placeholder="Écrivez votre message..." required></textarea>
+                            <label for="textAreaFormDesktop" class="form-label">Message *</label>
+                            <textarea class="form-control" name="textAreaForm" id="textAreaFormDesktop" rows="6" placeholder="Écrivez votre message..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary col-2">Envoyer</button>
+                        <button type="submit" name="submit" class="btn btn-primary col-2">Envoyer</button>
                     </form>
                 </div>
             </section>
