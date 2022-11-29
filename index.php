@@ -218,7 +218,7 @@
                             <h1 class="section5__title">Me Contacter</h1>
                         </div>
                     </div>
-                    <form class="container-lg p-4 d-flex flex-column align-items-center" action="contact.php" method="post">
+                    <form class="container-lg p-4 d-flex flex-column align-items-center" method="post">
                         <div class="row justify-content-between mt-4">
                             <div class="col-6 mb-4">
                                 <label for="lastNameForm">Nom</label>
@@ -459,7 +459,7 @@
                             <h1 class="section5__title">Me Contacter</h1>
                         </div>
                     </div>
-                    <form class="container-lg p-4 d-flex flex-column align-items-center" action="contact.php" method="post">
+                    <form class="container-lg p-4 d-flex flex-column align-items-center" method="post">
                         <div class="row justify-content-between mt-4">
                             <div class="col-6 mb-4">
                                 <label for="lastNameFormDesktop">Nom</label>
