@@ -19,9 +19,7 @@
 
     <body>
 
-        <?php 
-        echo "bonjour";
-        ?>
+
 <!---- MOBILE VERSION ---->
         <div id="content__mobile">
     <!---- HEADER MOBILE---->
